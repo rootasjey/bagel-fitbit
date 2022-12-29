@@ -1,0 +1,54 @@
+<svg>
+  <rect id="background" />
+
+  <!-- Top metrics (battery & weather) -->
+  <text id="battery-label" class="top-label" x="50%-80" y="100" fill="white" font-family="System-Bold" text-anchor="middle" text-length="3">
+      34%
+  </text>
+  <image id="battery-icon" x="50%-54" y="78" width="32" height="32" href="icons/battery/battery-full.png" />
+  <text x="50%+4" y="105" fill="white" font-family="System-Bold" text-anchor="middle" text-length="2">
+      •
+  </text>
+  <image id="weather-icon" x="50%+30" y="78" fill="white" width="32" height="32" href="icons/weather/cloud.png" />
+  <text id="weather-label" class="top-label" x="50%+90" y="100" fill="white" font-family="System-Bold" text-anchor="middle" text-length="3">
+      12°C
+  </text>
+
+  <!-- Clock & date -->
+  <text id="clock-label" x="50%" y="50%+15"
+      fill="white" font-family="System-Bold"
+      text-anchor="middle" text-length="20">
+      21:42
+  </text>
+  <text id="date-label" x="50%" y="50%+45"
+      fill="white" font-family="System-Bold"
+      text-anchor="middle" text-length="20">
+      Tue, Nov 2
+  </text>
+
+  <!-- Activities -->
+  <!-- <image id="calories-icon" x="24" y="24" width="24" height="24" href="icons/heart-fill.png" /> -->
+
+  <g id="all-activities-g" transform="translate(50% - 16, 100% - 80)">
+    <!-- left metrics -->
+    <image id="calories-icon" x="-74" y="3" fill="#eeeeee" opacity="0.5" width="24" height="24" href="icons/activities/calories-line.png" />
+    <image id="steps-icon" x="-42" y="3" fill="#eeeeee" opacity="0.5" width="24" height="24" href="icons/activities/steps-line.png" />
+    <!-- hr -->
+    <image id="hr-icon" x="0" y="0" width="32" height="32" href="icons/activities/heart-fill.png" />
+    <text id="hr-label" class="metric-label" x="16" y="54"
+        fill="white" font-family="System-Bold" text-anchor="middle" text-length="3">
+        60
+    </text>
+    <!-- right metrics -->
+    <image id="distance-icon" x="42" y="3" fill="#eeeeee" opacity="0.5" width="24" height="24" href="icons/activities/distance-line.png" />
+    <image id="active-icon" x="74" y="3" fill="#eeeeee" opacity="0.5" width="24" height="24" href="icons/activities/active-minutes-line.png" />
+  </g>
+
+  <g id="curent-activity-g" transform="translate(50% - 16, 100% - 80)">
+    <image id="current-activity-icon" x="-74" y="3" fill="#eeeeee" opacity="0.5" width="24" height="24" href="icons/activities/calories-line.png" />
+    <text id="current-activity-label" class="metric-label" x="16" y="54"
+        fill="white" font-family="System-Bold" text-anchor="middle" text-length="3">
+        22
+    </text>
+  </g>
+</svg>

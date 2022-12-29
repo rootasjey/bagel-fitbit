@@ -1,0 +1,38 @@
+{
+  "name": "bagel",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "@fitbit/sdk": "~6.1.0",
+    "@fitbit/sdk-cli": "^1.7.3",
+    "fitbit-sdk-types": "^8.0.3"
+  },
+  "fitbit": {
+    "appUUID": "94450af4-a03f-4081-a67c-1eb10a910b33",
+    "appType": "clockface",
+    "appDisplayName": "Bagel",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#ffffff",
+    "requestedPermissions": [
+      "access_activity",
+      "access_aod",
+      "access_exercise",
+      "access_heart_rate",
+      "access_internet",
+      "run_background"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {},
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build",
+    "start": "fitbit-build && install",
+    "install": "fitbit install",
+    "debug": "fitbit"
+  }
+}

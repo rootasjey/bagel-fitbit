@@ -1,0 +1,35 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+  color: white;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  fill: black;
+}
+
+#clock-label {
+  font-size: 62;
+}
+
+#date-label {
+  font-size: 22;
+  opacity: 0.5;
+}
+
+.metric-label {
+  font-size: 20;
+}
+
+.top-label {
+  font-size: 20;
+  opacity: 0.5;
+}
+
+#all-activities-g {
+  visibility: hidden;
+}
